@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/sjp4pxY/Food-Drive.jpg",
+    "title": "Food Drive",
+    "donate": 50,
+    "category": "Food",
+    "backgroundColor": "#F6D9CC",
+    "textColor": "#4E3629",
+    "categoryColor": "#F8C0A1",
+    "description": "Join our Food Drive and make a difference in the lives of those facing hunger. Your donation helps provide nutritious meals to families in need. Together, we can reduce food insecurity and ensure everyone has access to a hot meal. Your support matters."
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/dKRM2sL/health-check.png",
+    "title": "Health Checkup Camp",
+    "donate": 40,
+    "category": "Health",
+    "backgroundColor": "#FFD7D7",
+    "textColor": "#8B0000",
+    "categoryColor": "#FFA6A6",
+    "description": "Take part in our Health Checkup Camp and promote well-being in the community. Your contribution enables us to offer free health checkups, screenings, and vital medical services to underserved populations. Together, we can create a healthier and happier society."
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/47kTRtm/winter-clothing.jpg",
+    "title": "Winter Clothing Drive",
+    "donate": 30,
+    "category": "Clothing",
+    "backgroundColor": "#F6C7C0",
+    "textColor": "#4E2929",
+    "categoryColor": "#E8A18F",
+    "description": "Support our Winter Clothing Drive and keep those in need warm during the cold months. Your generosity provides coats, scarves, and blankets to individuals facing winter's harsh conditions. Together, we can bring comfort and warmth to our community."
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/qm292n3/scholership.jpg",
+    "title": "Educational Scholarships",
+    "donate": 25,
+    "category": "Education",
+    "backgroundColor": "#C7E1EA",
+    "textColor": "#1E3946",
+    "categoryColor": "#8FBAC8",
+    "description": "Empower the next generation through our Educational Scholarships program. Your donation supports students in pursuing their dreams by providing financial aid for education. Together, we can unlock the potential of young minds and build a brighter future."
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/MfFy6Js/Community-Kitchen.jpg",
+    "title": "Community Kitchen",
+    "donate": 60,
+    "category": "Food",
+    "backgroundColor": "#F6D9CC",
+    "textColor": "#4E3629",
+    "categoryColor": "#F8C0A1",
+    "description": "Join our Community Kitchen initiative and help us serve nutritious meals to those in need. Your support ensures that families struggling with hunger have access to hot and wholesome food. Together, we can make a significant impact on food security."
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/6wcjnss/mental.jpg",
+    "title": "Mental Health Awareness",
+    "donate": 35,
+    "category": "Health",
+    "backgroundColor": "#FFD7D7",
+    "textColor": "#8B0000",
+    "categoryColor": "#FFA6A6",
+    "description": "Promote mental health awareness and well-being through our program. Your contribution enables us to organize seminars, workshops, and resources that support mental wellness. Together, we can break the stigma and create a mentally healthier community."
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/brHPjwc/sale.jpg",
+    "title": "Ethical Fashion Sale",
+    "donate": 45,
+    "category": "Clothing",
+    "backgroundColor": "#F6C7C0",
+    "textColor": "#4E2929",
+    "categoryColor": "#E8A18F",
+    "description": "Shop for a cause with our Ethical Fashion Sale. Every purchase contributes to sustainable and ethical fashion practices, supporting both the planet and artisans. Join us in making fashion choices that make a positive impact."
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/fXBQ7QZ/online-learning.webp",
+    "title": "Online Learning Platform",
+    "donate": 55,
+    "category": "Education",
+    "backgroundColor": "#C7E1EA",
+    "textColor": "#1E3946",
+    "categoryColor": "#8FBAC8",
+    "description": "Access quality education through our Online Learning Platform. Your donation provides access to a wide range of courses and educational resources for learners of all ages. Together, we can empower individuals through knowledge."
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/ZGV2wzR/relife.jpg",
+    "title": "Hunger Relief",
+    "donate": 70,
+    "category": "Food",
+    "backgroundColor": "#F6D9CC",
+    "textColor": "#4E3629",
+    "categoryColor": "#F8C0A1",
+    "description": "Join our Hunger Relief efforts and help us combat food insecurity. Your support ensures that vulnerable communities have access to regular meals and essential nutrition. Together, we can fight hunger and improve lives."
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/H4H76Mx/fitness.jpg",
+    "title": "Fitness Workshop",
+    "donate": 80,
+    "category": "Health",
+    "backgroundColor": "#FFD7D7",
+    "textColor": "#8B0000",
+    "categoryColor": "#FFA6A6",
+    "description": "Enhance your well-being with our Fitness Workshop. Your contribution enables us to provide fitness classes, nutrition guidance, and wellness tips. Together, we can prioritize health and fitness for a better quality of life."
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/wNLqCxc/children-clothing.jpg",
+    "title": "Children's Clothing Drive",
+    "donate": 20,
+    "category": "Clothing",
+    "backgroundColor": "#F6C7C0",
+    "textColor": "#4E2929",
+    "categoryColor": "#E8A18F",
+    "description": "Support our Children's Clothing Drive and provide essential clothing items to kids in need. Your donation will help keep children warm and protected, allowing them to focus on growing and learning."
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/zZpQJBM/stem.jpg",
+    "title": "STEM Education Program",
+    "donate": 65,
+    "category": "Education",
+    "backgroundColor": "#C7E1EA",
+    "textColor": "#1E3946",
+    "categoryColor": "#8FBAC8",
+    "description": "Unlock the potential of young minds through our STEM Education Program. Your support enables us to offer STEM education opportunities, hands-on experiments, and learning resources to inspire the scientists and innovators of tomorrow. Join us in shaping a brighter future through the power of STEM."
+  }
+]
