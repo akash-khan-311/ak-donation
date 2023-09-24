@@ -1,0 +1,5 @@
+li a.active {
+  color: red !important;
+  background: transparent !important;
+  text-decoration: underline;
+}
