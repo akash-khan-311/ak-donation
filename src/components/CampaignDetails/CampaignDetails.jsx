@@ -1,5 +1,6 @@
 import React from "react";
 import "./CampaignDetails.css";
+import swal from "sweetalert";
 
 const CampaignDetails = ({ campaign }) => {
   const {
@@ -12,18 +13,35 @@ const CampaignDetails = ({ campaign }) => {
     donate,
     description,
   } = campaign || {};
-  
-  
-  
 
+  const handleAddToDonation = () => {
+    const addedDonations = [];
+    const donationsCampaigns = JSON.parse(localStorage.getItem("donations"));
+
+    if (!donationsCampaigns) {
+      addedDonations.push(campaign);
+      localStorage.setItem("donations", JSON.stringify(addedDonations));
+      swal("Good Job", "Donation Campaign Add Successfully", "success");
+    } else {
+      const isExits = donationsCampaigns.find((campaign) => campaign.id === id);
+      if (!isExits) {
+        addedDonations.push(...donationsCampaigns, campaign);
+        localStorage.setItem("donations", JSON.stringify(addedDonations));
+        sweetAlert("Good Job", "Donation Campaign Add Successfully", "success");
+      } else {
+        sweetAlert("Opps!", "This Campaign Already Added", "error");
+      }
+    }
+  };
 
   return (
     <div className="">
       <div className="relative">
-        <img src={image} className="h-[80vh]  w-full" alt="" />
+        <img src={image} className="lg:h-[80vh]  w-full" alt="" />
         <div className="absolute bottom-0 w-full ">
           <div className="overlay flex  py-6 ">
             <button
+              onClick={handleAddToDonation}
               className="btn text-white border-0 ml-10"
               style={{ background: `${textColor}` }}
             >
