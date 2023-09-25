@@ -1,0 +1,7 @@
+.main {
+  background: linear-gradient(rgba(241, 239, 239, 0.966), rgba(255, 252, 252, 0.918)),
+    url("../../assets/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

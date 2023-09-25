@@ -15,7 +15,7 @@ const Donation = () => {
     }
   }, []);
   return (
-    <div className=" py-14">
+    <div className=" py-14 container mx-auto">
       <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5">
         {donations.slice(0, dataLength).map((donation) => (
           <DonationCard key={donation.id} donation={donation} />
