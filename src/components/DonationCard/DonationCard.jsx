@@ -27,9 +27,9 @@ const DonationCard = ({ donation }) => {
       <CardHeader
         shadow={false}
         floated={false}
-        className="m-0 w-2/5 my-auto rounded-r-none "
+        className="m-0 w-2/5 my-auto rounded-r-none h-full"
       >
-        <img src={image} alt="card-image" className="w-full" />
+        <img src={image} alt="card-image" className="w-full h-full" />
       </CardHeader>
       <CardBody>
         <Typography
