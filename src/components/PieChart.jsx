@@ -7,8 +7,7 @@ const PieChart = ({ campaigns }) => {
   const doantionsData = JSON.parse(localStorage.getItem("donations"));
   let yourDonations = 0;
   let currentTotalDonations = 0;
-  const totalDonations = currentTotalDonations - yourDonations;
-  
+
   if (campaigns) {
     for (const campaign of campaigns) {
       currentTotalDonations += campaign.donate;
@@ -21,9 +20,6 @@ const PieChart = ({ campaigns }) => {
       yourDonations += savedCampaign.donate;
     }
   }
-
-  console.log(currentTotalDonations);
-  console.log(totalDonations);
 
   useEffect(() => {
     if (chartInstance.current) {
