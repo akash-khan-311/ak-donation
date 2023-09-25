@@ -21,20 +21,20 @@ const Donation = () => {
           <DonationCard key={donation.id} donation={donation} />
         ))}
       </div>
-      <div
-        className={
-          dataLength === donations.length
-            ? "hidden"
-            : "flex justify-center my-5"
-        }
-      >
-        <button
-          onClick={() => setDataLength(donations.length)}
-          className="btn bg-green-900 hover:bg-green-700 capitalize text-white"
+      {donations.length > 4 ? <div
+          className={
+            dataLength === donations.length
+              ? "hidden"
+              : "flex justify-center my-5"
+          }
         >
-          See All
-        </button>
-      </div>
+          <button
+            onClick={() => setDataLength(donations.length)}
+            className="btn bg-green-900 hover:bg-green-700 capitalize text-white"
+          >
+            See All
+          </button>
+        </div> : ' ' }
     </div>
   );
 };
