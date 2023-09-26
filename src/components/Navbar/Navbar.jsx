@@ -6,17 +6,17 @@ import logo from "../../assets/images/Logo.png";
 const Navbar = () => {
   const links = (
     <>
-      <li className="block p-1 font-sans text-sm font-normal leading-normal  ">
+      <li className="block p-1 font-sans leading-normal mr-4 font-bold text-xl hover:text-red-600">
         <NavLink className="flex items-center" to="/">
           Home
         </NavLink>
       </li>
-      <li className="block p-1 font-sans text-sm font-normal leading-normal  ">
-        <NavLink className="flex items-center" to="/donation">
+      <li className="block p-1 font-sans  leading-normal hover:text-red-600 mr-4  font-bold text-xl">
+        <NavLink className="flex items-center " to="/donation">
           Dontaion
         </NavLink>
       </li>
-      <li className="block p-1 font-sans text-sm font-normal  ">
+      <li className="block p-1 fs   hover:text-red-600 mr-4 font-bold text-xl">
         <NavLink className="flex items-center" to="/statistics">
           Statistics
         </NavLink>
@@ -25,10 +25,10 @@ const Navbar = () => {
   );
   return (
     <nav className="backdrop-blur-lg bg-white/10 border-b-2">
-      <div className="navbar container mx-auto text-black">
+      <div className="navbar container mx-auto text-white">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -46,7 +46,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className=" menu-sm dropdown-content mt-3 z-50 relative p-2 shadow bg-black rounded-box w-52 "
             >
               {links}
             </ul>
@@ -56,7 +56,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className=" z-10 menu-horizontal px-1">{links}</ul>
         </div>
       </div>
     </nav>

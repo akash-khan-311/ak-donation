@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-
 import { useLoaderData } from "react-router-dom";
 import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import "./Home.css";

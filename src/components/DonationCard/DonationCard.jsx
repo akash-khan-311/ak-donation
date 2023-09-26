@@ -22,7 +22,7 @@ const DonationCard = ({ donation }) => {
   return (
     <Card
       style={{ background: `${backgroundColor}` }}
-      className="w-full  flex-row"
+      className="w-full  relative -z-1 flex-row"
     >
       <CardHeader
         shadow={false}

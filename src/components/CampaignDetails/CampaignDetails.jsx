@@ -35,7 +35,7 @@ const CampaignDetails = ({ campaign }) => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto py-3 text-white">
       <div className="relative">
         <img src={image} className="lg:h-[80vh]  w-full" alt="" />
         <div className="absolute bottom-0 w-full ">
