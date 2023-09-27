@@ -16,7 +16,7 @@ const Donation = () => {
     }
   }, []);
   return (
-    <div className=" py-14 container mx-auto h-[50vh]">
+    <div className="py-14 container mx-auto h-full">
       <Helmet>
         <title>AS Campaign - Dontaion</title>
       </Helmet>

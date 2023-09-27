@@ -10,8 +10,11 @@ import {
 } from "recharts";
 
 const Chart = ({ campaigns }) => {
+
+
   const totalDonate = campaigns;
   const myDonate = JSON.parse(localStorage.getItem("donations"));
+  
   let remainingTotal = 0;
   let yourDonate;
 
@@ -55,6 +58,7 @@ const Chart = ({ campaigns }) => {
       </text>
     );
   };
+
   return (
     <div className=" lg:mx-auto py-16 mx-auto  md:w-[650px] md:h-[650px]">
       <ResponsiveContainer

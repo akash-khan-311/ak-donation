@@ -12,8 +12,6 @@ const Home = () => {
 
   const handleSearch = (e) => {
     const search = document.getElementById("searchInput").value;
-    console.log(search);
-
     e.preventDefault();
 
     if (search.length) {

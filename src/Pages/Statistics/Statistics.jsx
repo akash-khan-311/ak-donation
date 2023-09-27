@@ -6,10 +6,6 @@ import { Helmet } from "react-helmet-async";
 
 const Statistics = () => {
   const campaigns = useLoaderData();
-  let value = 0;
-  for (const campaign of campaigns) {
-    value += campaign.donate;
-  }
 
   return (
     <div>
