@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/images/Logo.png";
 
@@ -51,9 +51,9 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">
+          <Link className="btn btn-ghost normal-case text-xl" to="/">
             <img className="w-40" src={logo} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className=" z-10 menu-horizontal px-1">{links}</ul>

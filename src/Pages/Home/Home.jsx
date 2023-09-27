@@ -6,12 +6,12 @@ import "./Home.css";
 const Home = () => {
   const campaignes = useLoaderData();
   const [fullCampaigns, setFullCampaigns] = useState(campaignes);
+
   const [searchValue, setSearchValue] = useState(campaignes);
-  const newCampaigns = [];
-  newCampaigns.push(...campaignes);
-  const searchValue1 = useRef(null);
+
   const handleSearch = (e) => {
-    const search = searchValue1.current.value;
+    const search = document.getElementById("searchInput").value;
+    console.log(search);
 
     e.preventDefault();
 
@@ -37,7 +37,7 @@ const Home = () => {
             </h1>
             <div class="relative flex justify-center mx-auto h-10 w-full min-w-[200px] max-w-[24rem]">
               <input
-                ref={searchValue1}
+                id="searchInput"
                 type="text"
                 class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 pr-20 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                 placeholder=" "
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 py-20 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 py-20 px-3 lg:px-0">
           {searchValue?.map((campaign) => (
             <CategoryCard key={campaign.id} campaign={campaign} />
           ))}

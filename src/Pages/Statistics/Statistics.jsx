@@ -9,10 +9,10 @@ const Statistics = () => {
   for (const campaign of campaigns) {
     value += campaign.donate;
   }
-  console.log(value);
+
   return (
     <div>
-      <Chart />
+      <Chart campaigns={campaigns} />
     </div>
   );
 };

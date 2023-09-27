@@ -27,7 +27,7 @@ const CategoryCard = ({ campaign }) => {
           color="blue-gray"
           className="relative h-56 -mt-0 m-0 rounded-b-none shadow-none"
         >
-          <img className="h-full " src={image} alt="card-image" />
+          <img className="h-full w-full" src={image} alt="card-image" />
         </CardHeader>
         <CardBody>
           <Typography

@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent, useState } from "react";
 import {
   PieChart,
   Pie,
@@ -9,21 +9,22 @@ import {
   Legend,
 } from "recharts";
 
-const Chart = () => {
-  const totalDonate = 575;
-  let newDonate = 0;
-  const mydonate = JSON.parse(localStorage.getItem("donations"));
-  let remainingDonate = 0;
-  if (mydonate) {
-    for (let campaignCard of mydonate) {
-      newDonate += campaignCard.donate;
-    }
-    remainingDonate = totalDonate - newDonate;
+const Chart = ({ campaigns }) => {
+  const totalDonate = campaigns;
+  const myDonate = JSON.parse(localStorage.getItem("donations"));
+  let remainingTotal = 0;
+  let yourDonate;
+
+  if (myDonate) {
+    yourDonate = myDonate.length;
+    remainingTotal = totalDonate.length - yourDonate;
+  } else {
+    remainingTotal = totalDonate.length;
   }
 
   const data = [
-    { name: "Total Donation", value: remainingDonate },
-    { name: "Your Donation", value: newDonate },
+    { name: "Total Donation", value: remainingTotal },
+    { name: "Your Donation", value: yourDonate },
   ];
 
   const COLORS = ["#FF444A", "#00C49F"];
@@ -56,29 +57,24 @@ const Chart = () => {
   };
   return (
     <div className=" lg:mx-auto py-16">
-    
-        <PieChart className="mx-auto w-full" width={600} height={500}>
-          <Pie
-            data={data}
-            cx="50%"
-            cy="50%"
-            labelLine={false}
-            label={renderCustomizedLabel}
-            outerRadius={200}
-            fill="#8884d8"
-            dataKey="value"
-          >
-            {data.map((entry, index) => (
-              <Cell
-                key={`cell-${index}`}
-                fill={COLORS[index % COLORS.length]}
-              />
-            ))}
-          </Pie>
-          <Tooltip />
-          <Legend />
-        </PieChart>
-
+      <PieChart className="mx-auto w-full" width={600} height={500}>
+        <Pie
+          data={data}
+          cx="50%"
+          cy="50%"
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={200}
+          fill="#8884d8"
+          dataKey="value"
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Tooltip />
+        <Legend />
+      </PieChart>
     </div>
   );
 };
