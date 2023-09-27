@@ -1,6 +1,7 @@
 import React from "react";
 import "./CampaignDetails.css";
 import swal from "sweetalert";
+import { Helmet } from 'react-helmet-async';
 
 const CampaignDetails = ({ campaign }) => {
   const {
@@ -36,6 +37,9 @@ const CampaignDetails = ({ campaign }) => {
 
   return (
     <div className="container mx-auto py-3 text-white">
+      <Helmet>
+        <title>{`${title}`} </title>
+      </Helmet>
       <div className="relative">
         <img src={image} className="lg:h-[80vh]  w-full" alt="" />
         <div className="absolute bottom-0 w-full ">

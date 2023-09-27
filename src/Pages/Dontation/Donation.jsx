@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DonationCard from "../../components/DonationCard/DonationCard";
+import { Helmet } from "react-helmet-async";
 
 const Donation = () => {
   const [donations, setDonations] = useState([]);
@@ -16,12 +17,16 @@ const Donation = () => {
   }, []);
   return (
     <div className=" py-14 container mx-auto">
+      <Helmet>
+        <title>AS Campaign - Dontaion</title>
+      </Helmet>
       <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5">
         {donations.slice(0, dataLength).map((donation) => (
           <DonationCard key={donation.id} donation={donation} />
         ))}
       </div>
-      {donations.length > 4 ? <div
+      {donations.length > 4 ? (
+        <div
           className={
             dataLength === donations.length
               ? "hidden"
@@ -34,7 +39,10 @@ const Donation = () => {
           >
             See All
           </button>
-        </div> : ' ' }
+        </div>
+      ) : (
+        " "
+      )}
     </div>
   );
 };

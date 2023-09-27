@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import "./Home.css";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const campaignes = useLoaderData();
@@ -29,6 +30,9 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>AS Campaign - Home</title>
+      </Helmet>
       <div className="main lg:py-16">
         <div className="flex justify-center items-center h-[40vh]">
           <form className="form-control">

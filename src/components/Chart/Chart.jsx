@@ -56,25 +56,34 @@ const Chart = ({ campaigns }) => {
     );
   };
   return (
-    <div className=" lg:mx-auto py-16">
-      <PieChart className="mx-auto w-full" width={600} height={500}>
-        <Pie
-          data={data}
-          cx="50%"
-          cy="50%"
-          labelLine={false}
-          label={renderCustomizedLabel}
-          outerRadius={200}
-          fill="#8884d8"
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-        <Tooltip />
-        <Legend />
-      </PieChart>
+    <div className=" lg:mx-auto py-16 mx-auto  md:w-[650px] md:h-[650px]">
+      <ResponsiveContainer
+        className="w-full h-full mx-auto"
+        width="100%"
+        height="100%"
+      >
+        <PieChart className="mx-auto w-full h-full">
+          <Pie
+            data={data}
+            cx="50%"
+            cy="50%"
+            labelLine={false}
+            label={renderCustomizedLabel}
+            outerRadius={200}
+            fill="#8884d8"
+            dataKey="value"
+          >
+            {data.map((entry, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
+            ))}
+          </Pie>
+          <Tooltip />
+          <Legend />
+        </PieChart>
+      </ResponsiveContainer>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import CampaignDetails from "../CampaignDetails/CampaignDetails";
 
+
 const Campaigns = () => {
   const [campaign, setCampaign] = useState({});
   const { id } = useParams();
@@ -14,6 +15,7 @@ const Campaigns = () => {
 
   return (
     <div>
+   
       <div>
         <CampaignDetails campaign={campaign} />
       </div>
